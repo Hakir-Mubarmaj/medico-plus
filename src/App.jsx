@@ -1,23 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from './components/Navbar';
+import React from 'react';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import CardGrid from './components/CardGrid';
+import SuccessStories from './components/SuccessStories';
+import Features from './components/Features';
 import Footer from './components/Footer';
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Navbar />
-      <main style={{ textAlign: 'center', padding: '2rem' }}>
-        {/* Your main content goes here */}
-        <h1>Welcome to Penpaper</h1>
-        <p>Your Facebook clone site built with React and Vite!</p>
-      </main>
+    <div>
+      <Header />
+      <HeroSection />
+      <CardGrid />
+      <SuccessStories />
+      <Features />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
