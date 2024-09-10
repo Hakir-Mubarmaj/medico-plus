@@ -1,0 +1,42 @@
+.success-stories {
+    padding: 50px 0;
+    background-color: #fafafa;
+    text-align: center;
+  }
+  
+  .success-stories h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .stories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .story-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    background-color: #fff;
+  }
+  
+  .story-card h3 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .story-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .story-card blockquote {
+    font-style: italic;
+    color: #888;
+  }
+  
