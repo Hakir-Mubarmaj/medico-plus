@@ -13,8 +13,8 @@ const App = () => {
       <Header />
       <HeroSection />
       <CardGrid />
-      <SuccessStories />
-      <Features />
+      
+      
       <Footer />
     </div>
   );

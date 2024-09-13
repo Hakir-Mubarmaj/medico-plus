@@ -1,5 +1,5 @@
 import React from 'react';
-import './SuccessStories.css'; // Add your custom styles here
+ // Add your custom styles here
 
 const SuccessStories = () => {
   const stories = [

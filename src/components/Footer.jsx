@@ -1,17 +1,14 @@
 import React from 'react';
-import './Footer.css'; // Add your custom styles here
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <p>&copy; 2024 Udvash. All Rights Reserved.</p>
-        <nav>
-          <ul className="footer-nav">
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#terms">Terms of Service</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
+    <footer className="bg-gray-800 text-white py-6">
+      <div className="container mx-auto text-center">
+        <p className="text-sm">&copy; 2024 Udvash. All Rights Reserved.</p>
+        <nav className="mt-2">
+          <a href="#" className="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+          <a href="#" className="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+          <a href="#" className="text-gray-400 hover:text-white mx-2">Contact Us</a>
         </nav>
       </div>
     </footer>
