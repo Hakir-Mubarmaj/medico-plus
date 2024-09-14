@@ -4,17 +4,17 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md py-3 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
-        <img src="/logo.png" alt="Logo" className="h-12" />
+        <img src="https://i.ibb.co.com/L82TVpF/logo-removebg-preview.png" alt="Logo" className="h-12" />
         <nav className="space-x-6">
           <ul className="flex space-x-4">
             <li>
-              <a href="#" className="text-gray-700 font-medium hover:text-teal-600">Home</a>
+              <a href="#" className="text-gray-700 font-large hover:text-teal-600">প্রোগ্রামসমূহ</a>
             </li>
             <li>
-              <a href="#" className="text-gray-700 font-medium hover:text-teal-600">Courses</a>
+              <a href="#" className="text-gray-700 font-large hover:text-teal-600">শাখাসমূহ</a>
             </li>
             <li>
-              <a href="#" className="text-gray-700 font-medium hover:text-teal-600">Contact</a>
+              <a href="#" className="text-gray-700 font-large hover:text-teal-600">{'📚'}</a>
             </li>
           </ul>
         </nav>

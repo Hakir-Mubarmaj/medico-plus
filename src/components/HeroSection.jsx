@@ -1,21 +1,88 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 
-const HeroSection = () => {
+const HeroSlider = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const slides = [
+    {
+      id: 0,
+      webImage: "https://i.ibb.co.com/LhMs0WB/369945915-610386717874203-1826832679122413814-n-ai-brush-removebg-uvwm52im.png",
+      mobileImage: "https://i.ibb.co.com/L82TVpF/logo-removebg-preview.png",
+      gradient: "bg-gradient-to-b from-[#8b3d9b] to-[#26022d]",
+    },
+    {
+      id: 1,
+      webImage: "https://i.ibb.co.com/LhMs0WB/369945915-610386717874203-1826832679122413814-n-ai-brush-removebg-uvwm52im.png",
+      mobileImage:
+        "https://i.ibb.co.com/L82TVpF/logo-removebg-preview.png",
+      gradient: "bg-gradient-to-b from-[#273271] to-[#5abaa3]",
+    },
+    {
+      id: 2,
+      webImage: "https://i.ibb.co.com/LhMs0WB/369945915-610386717874203-1826832679122413814-n-ai-brush-removebg-uvwm52im.png",
+      mobileImage: "https://i.ibb.co.com/L82TVpF/logo-removebg-preview.png",
+      gradient: "bg-gradient-to-b from-[#643d90] to-[#207dc1]",
+    },
+    {
+      id: 3,
+      webImage: "https://i.ibb.co.com/LhMs0WB/369945915-610386717874203-1826832679122413814-n-ai-brush-removebg-uvwm52im.png",
+      mobileImage: "https://i.ibb.co.com/L82TVpF/logo-removebg-preview.png",
+      gradient: "bg-gradient-to-b from-[#6679ba] to-[#eb5d7e]",
+    },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
-    <section className="bg-purple-100 py-16 text-center">
-      <div className="container mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          মেডিকেল ৫০% ছাড়ে অনলাইন কোর্স
-        </h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-8">
-          সকল বিজ্ঞান শাখার ছাত্র, ছাত্রী, ও অভিভাবকদের জন্য বিশেষ সুযোগ।
-        </p>
-        <button className="bg-red-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-600 transition duration-300">
-          Enroll Now
-        </button>
+    <div className="relative overflow-hidden">
+      {/* Carousel Inner */}
+      <div className="relative w-full h-[500px]">
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`${
+              index === activeIndex ? "opacity-100" : "opacity-0"
+            } absolute inset-0 transition-opacity duration-1000 ${slide.gradient} flex justify-center items-center`}
+          >
+            <center>
+            <div className="container mx-auto">
+              <img
+                src={slide.webImage}
+                className="hidden md:block img-fluid"
+                alt={`Slide ${index}`}
+              />
+              <img
+                src={slide.mobileImage}
+                className="block md:hidden img-fluid w-full"
+                alt={`Slide ${index}`}
+              />
+            </div>
+            </center>
+          </div>
+        ))}
       </div>
-    </section>
+
+      {/* Carousel Indicators */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            onClick={() => setActiveIndex(index)}
+            className={`w-3 h-3 rounded-full ${
+              index === activeIndex ? "bg-white" : "bg-gray-400"
+            }`}
+            aria-label={`Slide ${index}`}
+          ></button>
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default HeroSection;
+export default HeroSlider;
