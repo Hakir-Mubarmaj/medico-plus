@@ -56,7 +56,7 @@ const Testimonials = () => {
     <section className="relative py-12 bg-green-100">
       <div className="container mx-auto text-center">
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <h2 className="text-4xl font-bold mb-12">সফল যাত্রা, কেমন তারা?</h2>
+        <h2 className="text-teal-900 text-center text-4xl font-bold mb-8">সফলতার গল্প!</h2>
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
@@ -75,9 +75,6 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        <button className="mt-8 px-6 py-2 bg-red-500 text-white rounded-full shadow-lg hover:bg-red-600">
-          আরও দেখুন
-        </button>
       </div>
       {/* Background pattern */}
       <div className="absolute inset-0 bg-pattern opacity-5"></div>

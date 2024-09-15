@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-  <footer class="bg-gradient-to-b from-[#6679ba] to-[#eb5d7e] text-white">
+  <footer class="bg-gradient-to-b from-[#643d90] to-[#eb5d7e] text-white">
   <div className="container mx-auto px-4 text-center">
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
   <div
@@ -14,7 +14,7 @@ const Footer = () => {
       <a href="https://www.facebook.com/medicoplus2012" class="mr-6 text-neutral-100 dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 hover:opacity-25"
+          class="h-4 w-5 hover:opacity-25"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
@@ -24,18 +24,12 @@ const Footer = () => {
       <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D%252B8801760085833%26context%3DARCHWXVHI165pA7-PZCrUh5Fyg62Sw922bx_WF-jKk9829RhZv-xq6xJ8aKxo_FxQCop8eMIwD-jZJNxS_VbWm69EloBk3i09FoyQy_Spo8m-IaEMrysm0WNiZ7tVsbOMSiQ6RFwZxi5H3nbjJnSn504rA%26source%3DFB_Page%26app%3Dfacebook%26entry_point%3Dpage_cta%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2MBX8G89eUhNpWD_UVqQnPPCJyKhO4JuOcYr-WqV-Iev5PL884FKmD5LU_aem_IpRI-z72N3d9A1cc1DKlLA&h=AT1ukT30ko5ov_wnG9fJJzYmnSP91x6MPals0r8mVSQ8vaX-KLS4Fl0K-dJP3WsUBvLjYSJQMuhV9ByACJMJmWUagYmRf2ouGA73YppZcfhhDGJ7c4_jRdGlIGXe1Icl3_M2gg" class="mr-6 text-neutral-100 dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 hover:opacity-25"
+          class="h-4 w-5 hover:opacity-25"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
             d="M17.472 14.382c-.297-.149-1.758-.867-2.031-.967-.273-.1-.472-.149-.67.149-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.473-.883-.788-1.48-1.762-1.655-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.496.099-.198.05-.372-.025-.521-.074-.149-.669-1.612-.916-2.207-.242-.579-.488-.501-.67-.511h-.576c-.173 0-.446.064-.68.297-.198.198-.26.447-.297.644-.035.198-.035.496.124.762.149.297.519.893 1.13 1.458.613.564 1.366 1.013 1.561 1.12.198.1.347.074.471-.124.124-.198.522-.613.661-.825.149-.173.298-.173.496-.099.198.074 1.255.593 1.755.898.261.149.447.223.644.347.297.149.447.124.613-.074.174-.223.774-.897.974-1.195.099-.198.049-.347-.074-.496zM12 0C5.373 0 0 5.373 0 12c0 2.111.553 4.093 1.61 5.845L.047 23.953l6.242-1.625A11.962 11.962 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.126a10.126 10.126 0 0 1-5.182-1.438l-.372-.223-3.703.964.99-3.607-.248-.372A10.122 10.122 0 1 1 12 22.126z" />
         </svg>
-      </a>
-      <a href="https://facebook.com/your-profile" class="mr-6 text-neutral-100 dark:text-neutral-200 hover:opacity-50">
-        &#xf09a; 
-      </a>
-      <a href="https://wa.me/your-phone-number" class="mr-6 text-neutral-100 dark:text-neutral-200 hover:opacity-50">
-        &#xf232; 
       </a>
     </div>
   </div>
@@ -50,24 +44,16 @@ const Footer = () => {
           Useful links
         </h6>
         <p class="mb-4">
-          <a href="#home" class="text-neutral-600 dark:text-neutral-200 hover:opacity-25"
-            >Back To Home</a
-          >
+          <a href="#" class="text-neutral-200 dark:text-neutral-200 hover:opacity-25">Back To Home</a>
         </p>
         <p class="mb-4">
-          <a href="#about" class="text-neutral-600 dark:text-neutral-200 hover:opacity-25"
-            >About Me</a
-          >
+          <a href="#about" class="text-neutral-200 dark:text-neutral-200 hover:opacity-25">About Us</a>
         </p>
         <p class="mb-4">
-          <a href="#projects" class="text-neutral-600 dark:text-neutral-200 hover:opacity-25"
-            >My Projects</a
-          >
+          <a href="#projects" class="text-neutral-200 dark:text-neutral-200 hover:opacity-25">Courses</a>
         </p>
         <p>
-          <a href="#contact" class="text-neutral-600 dark:text-neutral-200 hover:opacity-25"
-            >My Contact</a
-          >
+          <a href="#contact" class="text-neutral-200 dark:text-neutral-200 hover:opacity-25">Contact</a>
         </p>
       </div>
       <div>
@@ -88,8 +74,7 @@ const Footer = () => {
           </svg>
           Orchid building, Beside Teletalk Customer Care,
         </p>
-        <p class="mb-4 flex items-center justify-center md:justify-start">Bottola, Bogra Road, Barishal,</p>
-        <p class="mb-4 flex items-center justify-center md:justify-start">Bangladesh.</p>
+        <p class="mb-4 flex items-center justify-center md:justify-start">Bottola, Bogra Road, Barishal, Bangladesh.</p>
         <p class="mb-4 flex items-center justify-center md:justify-start">
           <svg
             xmlns="http://www.w3.org/2000/svg"
