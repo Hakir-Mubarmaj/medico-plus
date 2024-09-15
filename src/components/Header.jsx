@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
     <header className="bg-white shadow-md py-3 sticky top-0 z-50">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <img src="https://i.ibb.co/L82TVpF/logo-removebg-preview.png" alt="Logo" className="h-12" />
+        <Link to="/"><img src="https://i.ibb.co/L82TVpF/logo-removebg-preview.png" alt="Logo" className="h-12" /></Link>
 
         {/* Hamburger Menu */}
         <button className="text-gray-700 lg:hidden" onClick={toggleMenu}>
@@ -24,10 +25,10 @@ const Header = () => {
         <nav className="hidden lg:flex space-x-6">
           <ul className="flex justify-center items-center space-x-6">
             <li>
-              <a href="#" className="text-gray-700 font-bold hover:text-teal-600">প্রোগ্রামসমূহ</a>
+              <a href="#" className="text-gray-700 font-bold hover:text-teal-600"><Link to="/courses">প্রোগ্রামসমূহ</Link></a>
             </li>
             <li>
-              <a href="#" className="text-gray-700 font-bold hover:text-teal-600">শাখাসমূহ</a>
+              <a href="#" className="text-gray-700 font-bold hover:text-teal-600"><Link to="/branch">শাখাসমূহ</Link></a>
             </li>
             <li>
               <a href="tel:+8801787-457944" className="text-gray-700 font-bold hover:text-teal-600 text-2xl">
@@ -49,10 +50,10 @@ const Header = () => {
           <div className="absolute top-14 right-0 bg-white shadow-lg w-full lg:hidden">
             <ul className="flex flex-col space-y-4 p-4">
               <li>
-                <a href="#" className="text-gray-700 font-bold hover:text-teal-600">প্রোগ্রামসমূহ</a>
+                <a href="#" className="text-gray-700 font-bold hover:text-teal-600"><Link to="/courses">প্রোগ্রামসমূহ</Link></a>
               </li>
               <li>
-                <a href="#" className="text-gray-700 font-bold hover:text-teal-600">শাখাসমূহ</a>
+                <a href="#" className="text-gray-700 font-bold hover:text-teal-600"><Link to="/branch">শাখাসমূহ</Link></a>
               </li>
               <li>
                 <a href="tel:+8801787-457944" className="text-gray-700 font-bold hover:text-teal-600 text-2xl">

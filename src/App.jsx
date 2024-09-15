@@ -1,26 +1,19 @@
 import './App.css'
 import React from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import CardGrid from './components/CardGrid';
-import SuccessStories from './components/SuccessStories';
-import Features from './components/Features';
-import Footer from './components/Footer';
-import Testimonials from './components/Testimonials';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Courses from './pages/Courses';
+import LandingPage from './pages/LandingPage';
+import OurBranch from './pages/OurBranch';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <HeroSection />
-      <CardGrid />
-      <Testimonials />
-      <Features />
-
-      
-      
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/branch" element={<OurBranch />} />
+      </Routes>
+    </Router>
   );
 };
 
