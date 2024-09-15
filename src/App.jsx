@@ -6,6 +6,7 @@ import CardGrid from './components/CardGrid';
 import SuccessStories from './components/SuccessStories';
 import Features from './components/Features';
 import Footer from './components/Footer';
+import Testimonials from './components/Testimonials';
 
 const App = () => {
   return (
@@ -13,6 +14,9 @@ const App = () => {
       <Header />
       <HeroSection />
       <CardGrid />
+      <Testimonials />
+      <Features />
+
       
       
       <Footer />
