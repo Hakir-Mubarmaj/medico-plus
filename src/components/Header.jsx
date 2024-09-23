@@ -43,7 +43,7 @@ const Header = () => {
 
         {/* Login Button for large screens */}
         <button className="hidden lg:block bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-300">
-          Login
+        <Link to="/dashboard">Login</Link>
         </button>
 
         {/* Mobile Dropdown Menu */}
@@ -65,7 +65,7 @@ const Header = () => {
               </li>
               <li>
                 <button className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-300 w-full">
-                  Login
+                <Link to="/dashboard">Login</Link>
                 </button>
               </li>
             </ul>
